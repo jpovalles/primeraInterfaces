@@ -1,0 +1,50 @@
+nav { 
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 4rem;
+}
+
+.logo {
+    color: white;
+    flex-grow: 1;
+    
+}
+.div1{
+    display: flex;
+    justify-content: start;
+    flex-grow: 6;
+
+}
+
+.div2{
+    display: flex;
+    justify-content: end;
+    flex-grow: 1;
+}
+ul {
+    width: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    width:auto;
+}
+
+li{
+    display: inline;
+    color: black;
+    padding:50px;
+    font-size: 1.25rem;
+    padding: inherit;
+}
+
+
+.Link:hover{
+    color: aqua;
+}
+
+.Link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

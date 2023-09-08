@@ -1,0 +1,13 @@
+.container{
+    border: 1px solid lime;
+    width: 250px;
+    padding-bottom: 11px;
+    /* padding: 0px 0px 0px 0px afecta todos los lados en el orden del reloj
+       padding: 0px 0px afecta arriba abajo */
+    margin: 10px;
+    border-radius: 5px
+}
+
+.title{
+    color: gray;
+}

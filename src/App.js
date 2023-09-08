@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+//import React, { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+  
+    return (
+      <div className='App'>
+        <Routes>  {/*Hace la de un switch, por medio de casos, verifica el path */}
+          <Route exact path="/" element={<Home/>}/> {/*EN element va el componente que hace la de pagina */}
+          <Route exact path="/news" element={<About/>}/>
+          <Route exact path="/fanpage" element={<About/>}/>
+          <Route exact path="/discord" element={<About/>}/>
+          <Route exact path="/fbgroup" element={<About/>}/>
+          <Route exact path="/affiliate" element={<About/>}/>
+        </Routes>
+      </div>
+    );
 }
 
-export default App;
+
+export default App; /*siempre tiene que estar obligau */
