@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
+import React from "react";
 import styles from './Home.module.css'
-import navbar from '../../components/navbar'
+import  Navbar from '../../components/navbar'
 /*
 import { useState } from "react";
 import Container from '../../components/container';
@@ -35,7 +36,7 @@ function Home(){
 function Home(){
     return(
         <div>
-            <navbar/>
+            <Navbar/>
             <h1>HOME</h1>
         </div>
     )

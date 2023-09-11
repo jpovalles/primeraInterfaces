@@ -1,23 +1,24 @@
 nav { 
-    background-color: black;
+    background-color: gray;
     display: flex;
     align-items: center;
-    height: 4rem;
+    height: 60px;
 }
 
-.logo {
+.home {
     color: white;
     flex-grow: 1;
     
 }
-.div1{
+.buscador{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-grow: 6;
+    align-items: center;
 
 }
 
-.div2{
+.navEnd{
     display: flex;
     justify-content: end;
     flex-grow: 1;
@@ -47,4 +48,25 @@ li{
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 25px;
+}
+
+
+.campo{
+    border-radius: 15px;
+    border: 0;
+    height: 30px;
+    width: 520px;
+}
+
+.buscar{
+    border:0;
+    border-radius: 10px;
+    background-color:#DEDEDE;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 5px;
+    height: auto;
+    padding: 10px;
 }
