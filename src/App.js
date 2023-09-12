@@ -1,8 +1,17 @@
 import './App.css';
+/*
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap';
+import 'bootstrap/dist/js/bootstrap.esm';
+import 'bootstrap/dist/js/bootstrap.bundle';
+*/
 //import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
+//import { library } from '@fortawesome/fontawesome-svg-core'
+
+
 
 function App(){
   

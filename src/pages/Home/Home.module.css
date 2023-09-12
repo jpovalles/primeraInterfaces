@@ -1,9 +1,3 @@
-nav { 
-    background-color: black;
-    display: flex;
-    align-items: center;
-    height: 4rem;
-}
 
 .logo {
     color: white;
@@ -47,4 +41,9 @@ li{
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
 }
