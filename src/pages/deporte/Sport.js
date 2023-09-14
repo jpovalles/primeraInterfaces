@@ -1,17 +1,27 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import styles from './Home.module.css'
+import styles from './Sport.module.css'
 import Article from '../../components/article'
 import Postnav from "../../components/postnav";
 
-function Home(){
+function Sport(){
     return(
         <div>
-
             <Postnav/>
-            <h1>SPORTSTORE</h1>
-            <h1>Trends</h1>
+            <h1>DEPORTE: XXXXX</h1>
             <div className={styles.items}>
+                <Article/>
+                <Article/>
+                <Article/>
+                <Article/>
+                <Article/>
+                <Article/>
+                <Article/>
+                <Article/>
+                <Article/>
+                <Article/>
+                <Article/>
+                <Article/>
                 <Article/>
                 <Article/>
                 <Article/>
@@ -26,23 +36,8 @@ function Home(){
                 <Article/>
                 
             </div>
-            <h1>Ofertas</h1>
-            <div className={styles.items}>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-            </div>
         </div>
     )
 }
 
-export default Home;
+export default Sport;

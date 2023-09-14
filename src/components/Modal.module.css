@@ -11,14 +11,21 @@
 }
 
 .modalcontent{
-    width: 500px;
     background-color: white;
     border-radius: 25px;
+    padding: 20px;
+    width: 500px;
 }
 
 .modalheader, .modalfooter{
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
 }
+
+
 
 .modalbody{
     display: flex;
@@ -31,7 +38,46 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: violet;
     flex-wrap: wrap;
-    width: 50%;
+    width: 85%;
+}
+
+input[type=text], input[type=password]{
+    background-color: #DEDEDE;
+    border: none;
+    border-radius: 25px;
+    color: black;
+    margin: 10px;
+    height: 50px;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+input[type=submit]{
+    font-size: 25px;
+    height: 50px;
+    margin: 10px;
+    width: 200px;
+
+}
+
+.close{
+    position: absolute;
+    right: 20px;
+}
+
+.closeIcon{
+    border: none;
+    padding: 10px 20px;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    background-color: gray;
+    color: white;
+    border-radius: 50%;
+}
+
+.closeIcon:hover{
+    background-color: #DEDEDE;
 }
