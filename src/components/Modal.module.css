@@ -42,7 +42,7 @@
     width: 85%;
 }
 
-input[type=text], input[type=password]{
+.inText, .password{
     background-color: #DEDEDE;
     border: none;
     border-radius: 25px;

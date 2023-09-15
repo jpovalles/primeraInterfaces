@@ -16,9 +16,9 @@ function Modal({onClose}){
                 <div className={styles.modalbody}>
                     <form className={styles.form}>
                         {/*Metele estilo al modal y la funcionalidad de abrir y cerrar la ventala*/}
-                        <input type="text" required placeholder="Correo"/>
-                        <input type="password" required placeholder="Contraseña"/>
-                        <input type="submit" value="Ingresar" />
+                        <input type="text" required placeholder="Correo" className={styles.inText}/>
+                        <input type="password" required placeholder="Contraseña" className={styles.password}/>
+                        <input type="submit" value="Ingresar"/>
                     </form>
                 </div>
             </div>

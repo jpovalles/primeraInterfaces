@@ -1,0 +1,79 @@
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width: auto;
+}
+
+.imageCnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    background-color: #DEDEDE;
+}
+
+.formCnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:auto 0;
+    width: 70%;
+    height: 100%;
+}
+
+.formCnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form input{
+    margin:10px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.save{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.image{
+    background-color: gray;
+    padding: 30px 10px 10px 10px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.imgIcon{
+    height: 200px;
+    width: 200px;
+}
+
+.btnImage{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.btnImage:hover{
+    background-color: gray;
+    color: white;
+}

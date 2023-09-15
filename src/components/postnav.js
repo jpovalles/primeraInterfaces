@@ -25,7 +25,7 @@ function Postnav(){
                 <Link className={styles.nuevo}>
                     <FontAwesomeIcon icon={faPlus} />
                 </Link>
-                <Link className={styles.perfil}>
+                <Link className={styles.perfil} to="/profile">
                     <FontAwesomeIcon icon={faUser}/>
                 </Link>
             </div>

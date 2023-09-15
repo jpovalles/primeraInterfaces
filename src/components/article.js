@@ -5,7 +5,7 @@ import styles from './Article.module.css'
 function Article(){
     return(
         <div className={styles.article}>
-            <Link className={styles.Link}>
+            <Link className={styles.Link} to="/product">
                 <div className={styles.artImage}>
                 </div>
                 <div className={styles.artInfo}>
