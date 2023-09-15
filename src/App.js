@@ -14,6 +14,7 @@ import Modal from "./components/modal";
 import Navbar from './components/navbar';
 import Producto from './components/Producto'
 import Profile from './pages/Profile/Profile';
+import SignIn from './pages/signIn/signIn';
 
 
 
@@ -28,10 +29,19 @@ function App(){
     const onOpenModal = () => {
       setShowModal(true);
     }
+    const[showSignIn, setShowSignIn] = useState(false)
+
+    const onCloseSignIn = () => {
+      setShowSignIn(false);
+    }
+
+    const onOpenSignIn = () => {
+      setShowSignIn(true);
+    }
 
     return (
       <div className='App'>
-        <Navbar onOpen={onOpenModal}/>
+        <Navbar onOpenModal={onOpenModal} onOpenSignIn={onOpenSignIn}/>
         <Routes>  {/*Hace la de un switch, por medio de casos, verifica el path */}
           <Route exact path="/" element={<Home/>}/> {/*EN element va el componente que hace la de pagina */}
           <Route exact path="/sport" element={<Sport/>}/>
@@ -42,6 +52,8 @@ function App(){
         </Routes>
         
         {showModal === true ? <Modal onClose={onCloseModal}/> : null}
+        {showSignIn === true ? <SignIn onCloseSignIn={onCloseSignIn}/> : null}
+
       </div>
     );
 }

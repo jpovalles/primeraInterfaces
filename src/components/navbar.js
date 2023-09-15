@@ -6,7 +6,7 @@ import { faHouse, faMagnifyingGlass, faCartShopping } from '@fortawesome/free-so
 
 
 
-function Navbar({onOpen}){
+function Navbar({onOpenModal, onOpenSignIn}){
     return(
         <nav>
             <div  className={styles.home} >
@@ -25,8 +25,8 @@ function Navbar({onOpen}){
                 <Link className={styles.Link} to="/about">
                     <FontAwesomeIcon icon={faCartShopping} />
                 </Link>
-                <Link className={styles.Link} onClick={()=>{onOpen();}}>Log In</Link>
-                <Link className={styles.Link}>Sign Up</Link>
+                <Link className={styles.Link} onClick={()=>{onOpenModal();}}>Log In</Link>
+                <Link className={styles.Link} onClick={()=>{onOpenSignIn()}}>Sign Up</Link>
             </div>
         </nav>
     )
