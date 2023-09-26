@@ -1,0 +1,72 @@
+.titulo{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-right: 300px;    
+}
+
+.cont_principal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra_sup{
+    padding:10px;
+    text-align: center;
+}
+
+.columna_izq{
+    flex:1;
+    height: 100vh;
+    overflow: auto;
+    position: sticky;
+    display:flex;
+    flex-wrap: wrap;
+    top: 0;
+}
+
+.columna_der{
+    flex:1;
+    flex-direction: column;
+    
+    width: 40%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.desc{
+    flex: 0.6;
+    height: 100vh;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.precio{
+    flex: 0.4;
+    height: 100vh;
+}
+
+.botonRegresar{
+    background-color: lightgray;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-right: 10px;
+    margin-top: 15px;
+
+}
+
+.subtitulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.parteInf{
+    flex: 1;
+    display: flex;
+}
+
+.texto{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}

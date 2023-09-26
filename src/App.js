@@ -9,12 +9,12 @@ import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Sport from './pages/deporte/Sport';
-import About from './pages/About/About';
 import Modal from "./components/modal";
 import Navbar from './components/navbar';
-import Producto from './components/Producto'
+import Producto from './pages/Producto/Producto';
 import Profile from './pages/Profile/Profile';
-import SignIn from './pages/signIn/signIn';
+import SignIn from './components/signIn';
+import Carrito from './pages/Carrito/Carrito'
 
 
 
@@ -43,12 +43,11 @@ function App(){
       <div className='App'>
         <Navbar onOpenModal={onOpenModal} onOpenSignIn={onOpenSignIn}/>
         <Routes>  {/*Hace la de un switch, por medio de casos, verifica el path */}
-          <Route exact path="/" element={<Home/>}/> {/*EN element va el componente que hace la de pagina */}
+          <Route exact path="/" element={<Home/>}/> {/*En element va el componente que hace la de pagina */}
           <Route exact path="/sport" element={<Sport/>}/>
           <Route exact path="/product" element={<Producto/>}/>
           <Route exact path="/profile" element={<Profile/>}/>
-          <Route exact path="/fbgroup" element={<About/>}/>
-          <Route exact path="/affiliate" element={<About/>}/>
+          <Route exact path="/cart" element={<Carrito/>}/>
         </Routes>
         
         {showModal === true ? <Modal onClose={onCloseModal}/> : null}

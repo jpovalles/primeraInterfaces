@@ -22,7 +22,7 @@ function Navbar({onOpenModal, onOpenSignIn}){
             </div>
             
             <div className={styles.navEnd}>
-                <Link className={styles.Link} to="/about">
+                <Link className={styles.Link} to="/cart">
                     <FontAwesomeIcon icon={faCartShopping} />
                 </Link>
                 <Link className={styles.Link} onClick={()=>{onOpenModal();}}>Log In</Link>
