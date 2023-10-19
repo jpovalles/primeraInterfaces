@@ -26,7 +26,7 @@ function Navbar({onOpenModal, onOpenSignIn}){
                     <FontAwesomeIcon icon={faCartShopping} />
                 </Link>
                 <Link className={styles.Link} onClick={()=>{onOpenModal();}}>Log In</Link>
-                <Link className={styles.Link} onClick={()=>{onOpenSignIn()}}>Sign Up</Link>
+                <Link className={styles.SignUp} onClick={()=>{onOpenSignIn()}}>Sign Up</Link>
             </div>
         </nav>
     )

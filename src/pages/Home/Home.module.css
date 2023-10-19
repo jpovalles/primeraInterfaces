@@ -48,6 +48,13 @@ li{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width:83rem;
+    width:90%;
+    margin: 0 auto;
+}
+
+.tittle{
+    display: flex;
+    justify-content: start;
+    width: 90%;
     margin: 0 auto;
 }
