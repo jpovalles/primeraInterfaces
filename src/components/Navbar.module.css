@@ -5,6 +5,10 @@ nav {
     height: 80px;
 }
 
+.main div a{
+    margin: 0 auto 0 auto;
+}
+
 .home {
     color: white;
     flex-grow: 1;
@@ -13,7 +17,7 @@ nav {
 .buscador{
     display: flex;
     justify-content: center;
-    flex-grow: 6;
+    flex-grow: 5;
     align-items: center;
 
 }
@@ -50,6 +54,7 @@ li{
     font-weight: bold;
     font-size: 25px;
     margin: 10px;
+    padding: 5px;
 }
 
 
@@ -58,7 +63,7 @@ li{
     border-radius: 15px;
     border: 0;
     height: 40px;
-    width: 520px;
+    width: 80%;
     margin: 5px;
 }
 
@@ -81,10 +86,27 @@ li{
     color: white;
     font-weight: bold;
     font-size: 25px;
-    margin: 10px;
     padding: 5px;
+    width: 40%;
+    margin: 0 !important;
 }
 
 .SignUp:hover{
     color: #00A8E8;
+}
+
+.LogIn:hover{
+    color: #00A8E8;
+}
+
+.LogIn{
+    text-decoration: none;
+    background-color: white;
+    border-radius: 15px;
+    color: #003459;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px;
+    width: 30%;
+    margin: 0 !important;
 }

@@ -27,7 +27,7 @@ ul {
 
 li{
     display: inline;
-    color: black;
+    color: white;
     padding:50px;
     font-size: 1.25rem;
     padding: inherit;
@@ -57,4 +57,12 @@ li{
     justify-content: start;
     width: 90%;
     margin: 0 auto;
+}
+
+.main{
+    background-color: #00171F;
+}
+
+.main h1{
+    color:white;
 }

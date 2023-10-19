@@ -15,6 +15,7 @@ import Producto from './pages/Producto/Producto';
 import Profile from './pages/Profile/Profile';
 import SignIn from './components/signIn';
 import Carrito from './pages/Carrito/Carrito'
+import { Background } from 'react-parallax';
 
 
 
@@ -52,8 +53,8 @@ function App(){
         
         {showModal === true ? <Modal onClose={onCloseModal}/> : null}
         {showSignIn === true ? <SignIn onCloseSignIn={onCloseSignIn}/> : null}
-
       </div>
+      
     );
 }
 

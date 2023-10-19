@@ -4,12 +4,30 @@ import styles from './Home.module.css'
 import Article from '../../components/article'
 import Postnav from "../../components/postnav";
 import Categories from "../../components/categories"
+import img from "../../images/homeParallax.jpg"
+import logo from "../../images/logo.png"
+import { Parallax } from "react-parallax";
+
+const inStyles = {
+    position : "absolute",
+    top: "50%",
+    left: "50%",
+    padding: 20,
+    transform: "translate(-50%, -50%)"
+}
 
 function Home(){
     return(
-        <div>
-            <Postnav/>
-            <h1>SPORTSTORE</h1>
+        <div className={styles.main}>
+            
+            <Parallax bgImage={img} strength={200}>
+                <div style={{height:"70vh"}}>
+                    <Postnav/>
+                    <div style={inStyles}>
+                        <img src={logo} height={272} width={1319}></img>
+                    </div>
+                </div>
+            </Parallax>
             <div className={styles.tittle}>
                 <Categories/>
             </div>

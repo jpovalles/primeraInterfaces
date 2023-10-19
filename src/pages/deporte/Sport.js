@@ -6,7 +6,7 @@ import Postnav from "../../components/postnav";
 
 function Sport(){
     return(
-        <div>
+        <div className={styles.main}>
             <Postnav/>
             <h1>DEPORTE: XXXXX</h1>
             <div className={styles.items}>
