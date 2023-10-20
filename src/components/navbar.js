@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styles from './Navbar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faMagnifyingGlass, faCartShopping } from '@fortawesome/free-solid-svg-icons'
-
+import icon from '../images/fav.ico'
 
 
 function Navbar({onOpenModal, onOpenSignIn}){
@@ -11,7 +11,7 @@ function Navbar({onOpenModal, onOpenSignIn}){
         <nav className={styles.main}>
             <div  className={styles.home} >
                 <Link className={styles.Link} to="/">
-                    <FontAwesomeIcon icon={faHouse} />
+                    <img src={icon} width={'70px'} height={'70px'}></img>
                 </Link>
             </div>
             <div className={styles.buscador}>

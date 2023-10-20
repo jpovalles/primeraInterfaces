@@ -22,7 +22,7 @@ const inStyles = {
 function Sport(){
     return(
         <div className={styles.main}>
-            <Parallax bgImage={volley} strength={200}>
+            <Parallax bgImage={soccer} strength={200}>
                 <div style={{height:"60vh"}}>
                     <Postnav/>
                     <div style={inStyles}>
