@@ -1,0 +1,49 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:80vh;
+    background-color: #007EA7;
+}
+
+.cnt{
+    flex-grow: 3;
+}
+
+.icon{
+    flex-grow: 1;
+    animation: rote 1s ease;
+    animation:shake-right 0.8s linear both
+}
+
+
+@keyframes shake-right{
+    0%,
+    100%{
+        transform:rotate(0deg);
+        transform-origin:100% 50%}
+    10%{
+        transform:rotate(2deg)
+    }
+    20%,40%,60%{
+        transform:rotate(-4deg)
+    }
+    30%,50%,70%{
+        transform:rotate(4deg)
+    }
+    80%{
+        transform:rotate(-2deg)
+    }
+    90%{
+        transform:rotate(2deg)
+    }
+}
+.main h1{
+    color: white;
+    font-size: 80px;
+}
+
+.main h2{
+    color: #003459;
+    font-size: 50px;
+}

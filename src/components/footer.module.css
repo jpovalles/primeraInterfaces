@@ -1,11 +1,37 @@
 .main{
+    border-radius: 25px;
     display:flex;
     flex-direction: column;
     top: 0%;
+    width: 20%;
+    padding: 25px;
+    background-color: #00171F;
 }
 
 .main a{
     text-decoration: none;
     font-weight: bold;
     color: white;
+    font-size:15px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003459;
+    padding: 10px;
+}
+
+.ovalles, .ospina, .silva{
+    display: flex;
+    flex-direction: row;
+}
+
+.ovalles p, .ospina p, .silva p{
+    flex-grow: 3;
+}
+
+.ovalles a, .ospina a, .silva a{
+    flex-grow: 1;
 }

@@ -17,6 +17,7 @@ import SignIn from './components/signIn';
 import Carrito from './pages/Carrito/Carrito'
 import { Background } from 'react-parallax';
 import Footer from './components/footer';
+import NotFound from './pages/NotFound/NotFound'
 
 
 
@@ -50,6 +51,7 @@ function App(){
           <Route exact path="/product" element={<Producto/>}/>
           <Route exact path="/profile" element={<Profile/>}/>
           <Route exact path="/cart" element={<Carrito/>}/>
+          <Route exact path="*" element={<NotFound/>}/>
         </Routes>
         <Footer/>
         {showModal === true ? <Modal onClose={onCloseModal}/> : null}
