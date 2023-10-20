@@ -51,7 +51,10 @@
     padding: 10px;
     font-size: 20px;
     border-radius: 25px;
-    
+    border-style: none;
+    background-color: #003459;
+    color: white;
+    font-weight: bold;
 }
 
 .image{
@@ -72,9 +75,12 @@
     padding: 10px;
     font-size: 20px;
     border-radius: 25px;
+    border-style: none;
+    background-color: #003459;
+    color: white;
+    font-weight: bold;
 }
 
-.btnImage:hover{
-    background-color: gray;
-    color: white;
+.btnImage:hover, .save:hover{
+    background-color: #007EA7;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import  Navbar from '../../components/navbar'
 import styles from './Carrito.module.css'
 import Article from '../../components/article'
@@ -8,7 +9,7 @@ function Carrito(){
         <div>
             <div className={styles.cont_principal}>
                 <div style={{width: '20%'}}>
-                    <button className={styles.botonRegresar} >Seguir comprando</button>
+                    <Link className={styles.botonRegresar} to="/">Seguir comprando</Link>
                 </div>
                 <div style={{width: '80%'}}>
                     <h1 className={styles.titulo}>Carrito de compras</h1>
