@@ -6,7 +6,7 @@ import Article from '../../components/article'
 
 function Carrito(){
     return(
-        <div>
+        <div className={styles.main}>
             <div className={styles.cont_principal}>
                 <div style={{width: '20%'}}>
                     <Link className={styles.botonRegresar} to="/">Seguir comprando</Link>

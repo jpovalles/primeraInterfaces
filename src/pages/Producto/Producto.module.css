@@ -5,6 +5,11 @@
     text-align: center;    
 }
 
+.main{
+    background-color: #00171F;
+    height: 58rem;
+}
+
 .cont_principal{
     display: flex;
     justify-content: space-between;

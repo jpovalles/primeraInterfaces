@@ -16,6 +16,7 @@ import Profile from './pages/Profile/Profile';
 import SignIn from './components/signIn';
 import Carrito from './pages/Carrito/Carrito'
 import { Background } from 'react-parallax';
+import Footer from './components/footer';
 
 
 
@@ -50,7 +51,7 @@ function App(){
           <Route exact path="/profile" element={<Profile/>}/>
           <Route exact path="/cart" element={<Carrito/>}/>
         </Routes>
-        
+        <Footer/>
         {showModal === true ? <Modal onClose={onCloseModal}/> : null}
         {showSignIn === true ? <SignIn onCloseSignIn={onCloseSignIn}/> : null}
       </div>

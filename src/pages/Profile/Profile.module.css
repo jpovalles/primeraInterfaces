@@ -25,6 +25,12 @@
     padding:auto 0;
     width: 70%;
     height: 100%;
+    background-color: #007EA7;
+}
+
+.formCnt h1{
+    color: white;
+    margin: 50px;
 }
 
 .formCnt{
@@ -58,8 +64,10 @@
 }
 
 .image{
-    background-color: gray;
-    padding: 30px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007EA7;
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -69,6 +77,7 @@
 .imgIcon{
     height: 200px;
     width: 200px;
+    color: white;
 }
 
 .btnImage{

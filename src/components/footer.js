@@ -1,12 +1,16 @@
 import React from "react";
+import styles from './footer.module.css'
+
 
 
 function Footer(){
     return(
         <footer style={{backgroundColor: '#003459'}}>
-            <p>&copy; @DateTime.Now.Year Company Name. All rights reserved.</p>
-            <p>Powered by <a href="https://www.your-company-website.com" target="_blank" rel="noopener noreferrer">Your Company Name</a>.</p>
-            <p>Designed by <a href="https://www.your-designer-website.com" target="_blank" rel="noopener noreferrer">Your Designer Name</a>.</p>
+            <div className={styles.main}> 
+                <a href="https://github.com/jpovalles" target="_blank" rel="noopener noreferrer">Juan Pablo Ovalles Ceron</a>.
+                <a href="https://github.com/Juan-Ospina1216" target="_blank" rel="noopener noreferrer">Juan Pablo Ospina Cobo</a>.
+                <a href="https://github.com/jhonriverat" target="_blank" rel="noopener noreferrer">Jhon Arlex Silva Rivera</a>.
+            </div>
         </footer>
     )
 }

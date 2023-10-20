@@ -6,7 +6,7 @@ import { Dropdown } from 'react-bootstrap';
 
 function Producto(){
     return(
-        <div>
+        <div className={styles.main}>
             <div className={styles.cont_principal}>
                 <div className={styles.cont_imagen}>
                     <img src='https://liscanopower.com/wp-content/uploads/2023/07/e8b38933-7dc4-4509-bc5b-7056ab4c188e.jpeg' className={styles.imagen}/>
