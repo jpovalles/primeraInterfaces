@@ -8,6 +8,7 @@ import img from "../../images/homeParallax.jpg"
 import logo from "../../images/logo.png"
 import { Parallax } from "react-parallax";
 
+
 const inStyles = {
     position : "absolute",
     top: "50%",
@@ -16,7 +17,10 @@ const inStyles = {
     transform: "translate(-50%, -50%)"
 }
 
+
 function Home(){
+    const size = 15
+    const posts = new Array(size).fill(0)
     return(
         <div className={styles.main}>
             
@@ -33,30 +37,19 @@ function Home(){
             </div>
             <h1>Trends</h1>
             <div className={styles.items}>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                
+                {
+                    posts.map(post=>(
+                        <Article/>
+                    ))
+                }
             </div>
             <h1>Ofertas</h1>
             <div className={styles.items}>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
-                <Article/>
+                {
+                    posts.map(post=>(
+                        <Article/>
+                    ))
+                }
             </div>
         </div>
     )

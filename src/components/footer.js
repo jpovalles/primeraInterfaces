@@ -37,7 +37,7 @@ function Footer(){
 
                 <div className={styles.silva}>
                     <p>Jhon Arlex Silva Rivera</p>
-                    <a href="https://twitter.com/jpovallesceron">
+                    <a href="https://twitter.com/jhonriverat0">
                         <FontAwesomeIcon icon={faTwitter} style={{color: "#ffffff",}} />
                     </a>
                     <a href="https://github.com/jhonriverat">
