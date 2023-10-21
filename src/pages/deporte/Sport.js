@@ -30,6 +30,7 @@ function Sport(){
                     </div>
                 </div>
             </Parallax>
+            <Categories/>
             <div className={styles.items}>
                 <Article/>
                 <Article/>
