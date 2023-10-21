@@ -2,13 +2,14 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import styles from './Navbar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass, faCartShopping, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass, faCartShopping, faUser, faPlus } from '@fortawesome/free-solid-svg-icons'
 import icon from '../images/fav.ico'
 import { useDispatch, useSelector } from "react-redux";
 import { activarLog } from "../store/botonLogIn";
 import { desactivar } from "../store/botonProfile";
-import {desactivarSign, activarSign} from "../store/botonSignUp";
+import {activarSign} from "../store/botonSignUp";
 import {desactivarCarrito} from "../store/botonCarrito";
+import { desactivarArticulo } from "../store/botonArticulo";
 
 
 
@@ -17,6 +18,8 @@ function Navbar({onOpenModal, onOpenSignIn}){
     const {activadorLog} = useSelector((state) => state.log)
     const {activadorSign} = useSelector((state) => state.sign)
     const { activadorCar } = useSelector((state) => state.car)
+    const { activadorArt } = useSelector((state) => state.art)
+
 
     const dispatch = useDispatch();
     const [menuAbierto, setMenuAbierto] = useState(false);    
@@ -46,6 +49,11 @@ function Navbar({onOpenModal, onOpenSignIn}){
                 { activadorSign ? (
                     <Link className={styles.SignUp} onClick={()=>{onOpenSignIn()}}>Sign Up</Link>
                 ): null}
+                { activadorArt ? (
+                    <Link className={styles.nuevo}  to="/submit">
+                        <FontAwesomeIcon icon={faPlus}/>
+                    </Link>
+                ): null}
                 { activador ? (
                 <div className={styles.perfil}>
                     <FontAwesomeIcon 
@@ -55,12 +63,13 @@ function Navbar({onOpenModal, onOpenSignIn}){
                     {menuAbierto && (
                         <div className={styles.dropdown}>
                             <Link to="/profile">Editar</Link>
-                            <Link 
+                            <Link to="/"
                                 onClick={() => {
                                     dispatch(desactivar());
                                     dispatch(activarLog());
                                     dispatch(activarSign());
                                     dispatch(desactivarCarrito());
+                                    dispatch(desactivarArticulo());
                                 }}
                             >
                                 Cerrar sesión

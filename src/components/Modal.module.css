@@ -65,7 +65,9 @@ input[type=submit]{
     color: white;
     transition: background-color 0.3s;
 }
-.form button{
+/* ... tus otros estilos ... */
+
+.modalbody button {
     padding: 10px 15px;
     background-color: #007EA7;
     color: #fff;
@@ -74,10 +76,12 @@ input[type=submit]{
     cursor: pointer;
     transition: background-color 0.3s;
 }
-.form button:hover {
+
+.modalbody button:hover {
     background-color: white;
-    color: black; 
+    color: black;
 }
+
 
 input[type=submit]:hover{
     background-color: white;
@@ -109,3 +113,13 @@ input[type=submit]:hover{
     background-color: white;
     color: black;
 }
+.successMessage {
+    background-color: #e0ffe0; /* Un verde claro */
+    color: #33cc33;  /* Un verde oscuro */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #33cc33;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
