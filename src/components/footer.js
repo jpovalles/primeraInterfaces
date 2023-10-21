@@ -24,15 +24,15 @@ function Footer(){
 
                 <div className={styles.ospina}>
                     <p>Juan Pablo Ospina Cobo</p>
-                        <a href="https://twitter.com/JuanOspi1216">
-                            <FontAwesomeIcon icon={faTwitter} style={{color: "#ffffff",}} />
-                        </a>
-                        <a href="https://github.com/Juan-Ospina1216">
-                            <FontAwesomeIcon icon={faGithub} style={{color: "#ffffff",}} />
-                        </a>
-                        <a href="https://www.instagram.com/jp.ospina16/">
-                            <FontAwesomeIcon icon={faInstagram} style={{color: "#ffffff",}} />
-                        </a>
+                    <a href="https://twitter.com/JuanOspi1216">
+                        <FontAwesomeIcon icon={faTwitter} style={{color: "#ffffff",}} />
+                    </a>
+                    <a href="https://github.com/Juan-Ospina1216">
+                        <FontAwesomeIcon icon={faGithub} style={{color: "#ffffff",}} />
+                    </a>
+                    <a href="https://www.instagram.com/jp.ospina16/">
+                        <FontAwesomeIcon icon={faInstagram} style={{color: "#ffffff",}} />
+                    </a>
                 </div>
 
                 <div className={styles.silva}>
@@ -47,8 +47,6 @@ function Footer(){
                         <FontAwesomeIcon icon={faInstagram} style={{color: "#ffffff",}} />
                     </a>
                 </div>
-
-
             </div>
         </footer>
     )

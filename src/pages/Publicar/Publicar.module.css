@@ -1,0 +1,133 @@
+.botonCancelar{
+    background-color: #00A8E8;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 150%;
+    padding: 1%;
+    padding-left: 15%;
+    padding-right: 15%; 
+    font-weight: bold;
+}
+
+.botonCancelar:hover{
+    color: #003459;
+}
+
+.titulo{
+    font-size: 300%;
+    color: white;
+    align-items: center;
+    margin-right: 300px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cont_principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont2{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.contImagen{
+    height: 90vh;  
+    position: relative;  
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    background-color: #003459;
+}
+
+.imagen{
+    /* background-color: white; */
+    height: 100%;
+    width: 100%;
+}
+
+.btnImage{
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #003459;
+    font-size: 120%;
+    font-weight: bold;
+    padding: 2%;
+    top: 92.5%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btnImage:hover{
+    background-color: #007EA7;
+    color: white;
+}
+
+.contTexto{
+    width: 70%;
+    align-content: top;
+}
+
+.text1{
+    color: white;
+    margin-top: 3%;
+    font-size: 150%;
+}
+
+.form{
+    width: 80%;
+    height: 8vh;
+    margin-top: 2%;
+    border-radius: 10px;
+    border: none;
+    border-width: 3px;
+    background-color: white;
+    color: black;
+}
+
+.estado{
+    width: 80%;
+    border-radius: 10px;
+    height: 8vh;
+    margin-top: 2%;
+}
+
+.metodo{
+    width: 80%;
+    height: 8vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.checkbox{
+    color: white;
+    width: 30%;
+    height: 3vh;
+    border-radius: 20px;
+}
+
+.text2{
+    font-size: 200%;
+    color: white;
+}
+
+.btn{
+    border-radius: 10px;
+    font-size: 150%;
+    border: none;
+    font-weight: bold;
+    color: white;
+    background-color: #007EA7;
+}
+
+.btn:hover{
+    color: #00171F
+}

@@ -10,8 +10,8 @@ function Postnav(){
     return(
         <div className={styles.postnav}>
             <div className={styles.postnavend}>
-                <Link className={styles.nuevo}>
-                    <FontAwesomeIcon icon={faPlus} />
+                <Link className={styles.nuevo}  to="/submit">
+                    <FontAwesomeIcon icon={faPlus}/>
                 </Link>
                 <Link className={styles.perfil} to="/profile">
                     <FontAwesomeIcon icon={faUser}/>

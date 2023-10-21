@@ -1,11 +1,12 @@
 .main{
     border-radius: 25px;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     top: 0%;
-    width: 20%;
-    padding: 25px;
+    width: 45%;
+    padding: 10px;
     background-color: #00171F;
+    align-items: center;
 }
 
 .main a{
@@ -26,12 +27,9 @@ footer{
 .ovalles, .ospina, .silva{
     display: flex;
     flex-direction: row;
+    margin: 10px 20px 10px 20px;
 }
 
 .ovalles p, .ospina p, .silva p{
     flex-grow: 3;
-}
-
-.ovalles a, .ospina a, .silva a{
-    flex-grow: 1;
 }

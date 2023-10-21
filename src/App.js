@@ -18,6 +18,7 @@ import Carrito from './pages/Carrito/Carrito'
 import { Background } from 'react-parallax';
 import Footer from './components/footer';
 import NotFound from './pages/NotFound/NotFound'
+import Publicar from './pages/Publicar/Publicar'
 
 
 
@@ -51,6 +52,7 @@ function App(){
           <Route exact path="/product" element={<Producto/>}/>
           <Route exact path="/profile" element={<Profile/>}/>
           <Route exact path="/cart" element={<Carrito/>}/>
+          <Route exact path="/submit" element={<Publicar/>}/>
           <Route exact path="*" element={<NotFound/>}/>
         </Routes>
         <Footer/>

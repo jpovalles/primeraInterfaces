@@ -1,8 +1,12 @@
 .titulo{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
-    margin-top: 10px;
-    text-align: center;    
+    font-size: 300%;
+    margin-top: 2%;
+    color: white;
+    margin: 0 auto;
+    font-weight: bold;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main{
@@ -13,18 +17,28 @@
 .cont_principal{
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
+    height: 8%;
+}
+
+.cont2{
+    display: flex;
+    justify-content: space-between;
+    height: 92%;
 }
 
 .cont_texto{
-    width: 60%;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .cont_imagen{
-    background-color: gray;
-    height: 525px;
-    margin: 30px;
-    width: 40%;
+    background-color: #003459;
+    height: 80%;
+    width: 45%;
+    align-items: center;
 }
 
 .imagen{
@@ -33,11 +47,9 @@
 }
 
 .desc{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
-    margin: 10px;
-    text-align: left;
-    
+    font-size: 200%;
+    font-weight: bold;
+    margin-top: 10%;
 }
 
 .subcontenedor{
@@ -45,37 +57,88 @@
 }
 
 .seccion{
+    margin-top: 10%;
     flex:1;
+    height: 5.65%;
+    margin-bottom: 4.5%;
 }
 
 .uso{
-    background-color: lightgrey;
-    border: 2px solid black;
-    font-family: 'Times New Roman', Times, serif;
-    height: 45px;
-    margin-top: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100px;
+    border-radius: 10px;
+    max-width: 70%;
+    text-align: center;
+    background-color:#003459;
+    font-size: 200%;
+    font-weight: bold;
+    margin-top: 10%;
 }
 
 .boton{
-    margin-top: 45px;
-    background-color: lightgrey;
-    border: 3px solid black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    height: 40px;
-    width: 220px;
+    margin-top: 10%;
+    background-color: #007EA7;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 130%;
+    height: 7.5%;
+    width: 80%;
+}
+
+.boton:hover{
+    color:#007EA7;
+    background-color: white 
 }
 
 .number{
-    background-color: white;
-    height: 30px;
-    margin-right: 500px;
-    margin-top: 20px;
+    background-color: #003459;
+    height: 100%;
+    color: white;
+    border: none;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .menu{ 
-   margin-top: 18px;
-  }
+   margin-top: 5%;
+   align-items: right;
+   height: 5.65%;
+   width: 70%;
+   border-radius: 10px;
+   background-color: #003459;
+   color: white;
+   text-align: center;
+   border: none;
+}
+
+.botonCancelar{
+    background-color: #00A8E8;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 150%;
+    padding: 1%;
+    padding-left: 15%;
+    padding-right: 15%; 
+    font-weight: bold;
+}
+
+.botonCancelar:hover{
+    color: #003459;
+}
+
+.titulos{
+    width: 50%;
+    align-content: center;
+    align-items: center;
+    text-align: left;
+    padding-left: 7%;  
+}
+
+.descripcion{
+    width: 50%;
+    align-content: left;
+    align-items: left;
+    text-align: left;
+    padding-left: 7%; 
+}
