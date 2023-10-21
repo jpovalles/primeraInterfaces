@@ -63,6 +63,10 @@
     font-weight: bold;
 }
 
+.save:hover{
+    background-color: #00A8E8;
+}
+
 .image{
     display: flex;
     align-items: center;
@@ -90,6 +94,7 @@
     font-weight: bold;
 }
 
-.btnImage:hover, .save:hover{
+.btnImage:hover{
     background-color: #007EA7;
 }
+

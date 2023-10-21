@@ -33,7 +33,7 @@ function Publicar(){
                             <option value="Medianamente usado">Medianamente usado</option>
                             <option value="Muy usado">Muy usado</option>
                         </select>
-                        <select class="form-select" aria-label="Multiple select example" className={styles.metodo} multiple>
+                        <select class="form-select" aria-label="Multiple select example" className={styles.metodo}>
                             <option selected>Selecciona el estado</option>
                             <option value="Nuevo">Efectivo</option>
                             <option value="Poco uso">Tarjeta de credito</option>
