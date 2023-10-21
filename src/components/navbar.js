@@ -4,7 +4,11 @@ import styles from './Navbar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass, faCartShopping, faUser } from '@fortawesome/free-solid-svg-icons'
 import icon from '../images/fav.ico'
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { activarLog } from "../store/botonLogIn";
+import { desactivar } from "../store/botonProfile";
+import {desactivarSign, activarSign} from "../store/botonSignUp";
+import {desactivarCarrito} from "../store/botonCarrito";
 
 
 
@@ -13,6 +17,8 @@ function Navbar({onOpenModal, onOpenSignIn}){
     const {activadorLog} = useSelector((state) => state.log)
     const {activadorSign} = useSelector((state) => state.sign)
     const { activadorCar } = useSelector((state) => state.car)
+
+    const dispatch = useDispatch();
     const [menuAbierto, setMenuAbierto] = useState(false);    
     return(
         <nav className={styles.main}>
@@ -50,7 +56,6 @@ function Navbar({onOpenModal, onOpenSignIn}){
                         <div className={styles.dropdown}>
                             <Link to="/profile">Editar</Link>
                             <Link 
-                                to="/log"
                                 onClick={() => {
                                     dispatch(desactivar());
                                     dispatch(activarLog());
