@@ -1,11 +1,15 @@
 import React from "react";
-
+import { useDispatch, useSelector } from "react-redux";
 import styles from './Producto.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
-
+import { sumar, restar } from "../../store/contadorSlice"
 
 function Producto(){
+    const {cuenta} = useSelector((state) => state.contador);
+    
+    const dispatch = useDispatch();
+
     return(
         <div className={styles.main}>
             <div className={styles.cont_principal}>
@@ -28,7 +32,8 @@ function Producto(){
                         <p className={styles.desc}>Método de pago:</p>
                         <p className={styles.desc}>Tallas disponibles:</p>
                         <p className={styles.desc}>Cantidad:</p>  
-                        <button className={styles.boton}>Agregar al carrito</button>
+                        <button className={styles.boton} onClick={() => {dispatch(sumar())}}>Agregar al carrito</button>
+                        {/* <p style={{color: "white"}}>si {cuenta}</p> */}
                     </div>
                     <div className={styles.descripcion}>
                         <p className={styles.desc}>XXXX </p>
@@ -51,5 +56,6 @@ function Producto(){
         
     )
 }
+
 
 export default Producto;

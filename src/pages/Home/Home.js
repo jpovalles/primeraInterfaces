@@ -7,6 +7,8 @@ import Categories from "../../components/categories"
 import img from "../../images/homeParallax.jpg"
 import logo from "../../images/logo.png"
 import { Parallax } from "react-parallax";
+import { useSelector } from "react-redux";
+
 
 const inStyles = {
     position : "absolute",

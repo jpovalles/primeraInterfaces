@@ -169,4 +169,21 @@ li{
     transform: translateY(0);
 }
 
+.cantProductos{
+    position: absolute;
+    transform: translate(70%, 0%);
+    background-color: #007EA7;
+    border-radius: 100%;
+    font-size: 50%;
+    width: 1.5%;
+    text-align: center;
+    height: 3%
+}
 
+.contCart{
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+
+}

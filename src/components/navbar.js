@@ -10,13 +10,12 @@ import { desactivar } from "../store/botonProfile";
 import {desactivarSign, activarSign} from "../store/botonSignUp";
 import {desactivarCarrito} from "../store/botonCarrito";
 
-
-
 function Navbar({onOpenModal, onOpenSignIn}){
     const {activador} = useSelector((state) => state.profile)
     const {activadorLog} = useSelector((state) => state.log)
     const {activadorSign} = useSelector((state) => state.sign)
     const { activadorCar } = useSelector((state) => state.car)
+    const {cuenta} = useSelector((state) => state.contador)
 
     const dispatch = useDispatch();
     const [menuAbierto, setMenuAbierto] = useState(false);    
@@ -35,11 +34,12 @@ function Navbar({onOpenModal, onOpenSignIn}){
             </div>
             
             <div className={styles.navEnd}>
-                { activadorCar ? (
-                    <Link className={styles.Link} to="/cart">
-                        <FontAwesomeIcon icon={faCartShopping} />
-                    </Link>
-                ): null}
+                { activadorCar ? 
+                        <Link className={styles.Link} to="/cart">
+                            {cuenta != 0 && (<p className={styles.cantProductos}>{cuenta}</p>)}
+                            <FontAwesomeIcon icon={faCartShopping} />
+                        </Link>
+                : null}
                 { activadorLog ? (
                     <Link className={styles.LogIn} onClick={()=>{onOpenModal();}}>Log In</Link>
                 ): null}
