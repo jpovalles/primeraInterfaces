@@ -46,7 +46,7 @@ function SignIn({ onCloseSignIn }) {
       dispatch(activadorCarrito());
       dispatch(activadorArticulo());
       onCloseSignIn();
-    }, 2000);
+    }, 1000);
   };
 
   return (

@@ -34,7 +34,7 @@ function Modal({ onClose }) {
             dispatch(activadorCarrito());
             dispatch(activadorArticulo());
             onClose();
-        }, 2000);
+        }, 1000);
     };
 
     return (

@@ -11,7 +11,6 @@
 
 .main{
     background-color: #00171F;
-    height: 58rem;
 }
 
 .cont_principal{
@@ -24,7 +23,6 @@
 .cont2{
     display: flex;
     justify-content: space-between;
-    height: 92%;
     padding: 40px;
 }
 
