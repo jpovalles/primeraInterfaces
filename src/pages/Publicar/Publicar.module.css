@@ -29,12 +29,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 40px;
 }
 
 .cont2{
     display: flex;
     justify-content: space-between;
     align-items: top;
+    padding: 40px;
 }
 
 .contImagen{
@@ -42,7 +44,7 @@
     position: relative;  
     align-items: center;
     justify-content: space-between;
-    width: 30%;
+    width: 50%;
     background-color: #003459;
 }
 
@@ -55,7 +57,7 @@
 .btnImage{
     position: absolute;
     border: none;
-    border-radius: 10px;
+    border-radius: 25px;
     color: white;
     background-color: #003459;
     font-size: 120%;
@@ -72,8 +74,9 @@
 }
 
 .contTexto{
-    width: 70%;
-    align-content: top;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .text1{
@@ -86,7 +89,7 @@
     width: 80%;
     height: 8vh;
     margin-top: 2%;
-    border-radius: 10px;
+    border-radius: 25px;
     border: none;
     border-width: 3px;
     background-color: white;
@@ -95,7 +98,7 @@
 
 .estado{
     width: 80%;
-    border-radius: 10px;
+    border-radius: 25px;
     height: 8vh;
     margin-top: 2%;
 }
@@ -105,6 +108,7 @@
     height: 8vh;
     margin-top: 2%;
     margin-bottom: 2%;
+    border-radius: 25px;
 }
 
 .checkbox{
