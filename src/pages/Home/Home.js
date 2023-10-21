@@ -43,14 +43,10 @@ function Home(){
                 <Article/>
                 <Article/>
                 <Article/>
-                <Article/>
-                <Article/>
                 
             </div>
             <h1>Ofertas</h1>
             <div className={styles.items}>
-                <Article/>
-                <Article/>
                 <Article/>
                 <Article/>
                 <Article/>

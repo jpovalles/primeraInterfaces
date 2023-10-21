@@ -65,6 +65,19 @@ input[type=submit]{
     color: white;
     transition: background-color 0.3s;
 }
+.form button{
+    padding: 10px 15px;
+    background-color: #007EA7;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.form button:hover {
+    background-color: white;
+    color: black; 
+}
 
 input[type=submit]:hover{
     background-color: white;

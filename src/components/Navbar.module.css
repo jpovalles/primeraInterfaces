@@ -88,7 +88,7 @@ li{
     font-size: 25px;
     padding: 5px;
     width: 40%;
-    margin: 0 !important;
+    margin: 5 !important;
 }
 
 .SignUp:hover{
@@ -108,5 +108,65 @@ li{
     font-size: 25px;
     padding: 5px;
     width: 30%;
-    margin: 0 !important;
+    margin: 5 !important;
+    /*margin-left: 5rem;*/
 }
+.nuevo, .perfil{
+    display: flex;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;  
+    padding: 0px;
+    margin: 10px;
+    font-size: 30px;
+    width: 70px;
+   
+}
+
+.perfil:hover{
+    color: #00A8E8;
+}
+
+/* Estilos para tu Navbar.module.css */
+
+.perfil {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 120px; /* Reducir aún más el ancho del menú */
+    box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.1); /* Sombra más sutil */
+    z-index: 1000;
+    top: 100%;
+    right: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+.dropdown a {
+    color: #333; /* Color de texto más oscuro y sutil */
+    padding: 6px 10px; /* Reducir aún más el padding */
+    text-decoration: none;
+    display: block;
+    font-size: 14px; /* Reducir el tamaño de fuente */
+    transition: background-color 0.2s; /* Efecto de transición para el hover */
+}
+
+.dropdown a:hover {
+    background-color: #007EA7; /* Cambio de color al pasar el cursor */
+    color: white; /* Color de texto al pasar el cursor */
+}
+
+.perfil:hover .dropdown, .dropdown:hover {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+

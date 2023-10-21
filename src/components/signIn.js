@@ -20,7 +20,7 @@ function SignIn({ onCloseSignIn }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Lógica de registro
+    
     console.log(formData);
 
     // Mostrar mensaje de éxito
@@ -76,56 +76,3 @@ function SignIn({ onCloseSignIn }) {
 export default SignIn;
 
 
-
-
-/*
-function SignIn() {
-    const [formData, setFormData] = useState({ email: '' });
-
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    return (
-        <div>
-            <h1>Registrate</h1>
-            <div className={styles.items}>
-            <input
-                type="text"
-                name="nombre"
-                placeholder="Nombre"
-                value={formData.nombre}
-                onChange={handleChange}
-                required
-            />
-            <input
-                type="text"
-                name="apellidos"
-                placeholder="Apellidos"
-                value={formData.apellidos}
-                onChange={handleChange}
-                required
-            />
-            <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-            />
-            <input
-                type="password"
-                name="contrasena"
-                placeholder="Contrasena"
-                value={formData.contra}
-                onChange={handleChange}
-                required
-            />
-            </div>
-        </div>
-    );
-}
-
-export default SignIn;
-*/
