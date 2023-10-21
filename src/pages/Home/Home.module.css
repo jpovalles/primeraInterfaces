@@ -50,6 +50,8 @@ li{
     flex-wrap: wrap;
     width:90%;
     margin: 0 auto;
+    width: 80%;
+    padding: 50px;
 }
 
 .tittle{

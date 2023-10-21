@@ -3,10 +3,11 @@
     display:flex;
     flex-direction: row;
     top: 0%;
-    width: 45%;
+    width: 70%;
     padding: 10px;
     background-color: #00171F;
     align-items: center;
+    justify-content: center;
 }
 
 .main a{
@@ -14,6 +15,7 @@
     font-weight: bold;
     color: white;
     font-size:15px;
+    margin: 0 5px 0 5px;
 }
 
 footer{
@@ -27,7 +29,7 @@ footer{
 .ovalles, .ospina, .silva{
     display: flex;
     flex-direction: row;
-    margin: 10px 20px 10px 20px;
+    margin: 0 20px 0 20px;
 }
 
 .ovalles p, .ospina p, .silva p{

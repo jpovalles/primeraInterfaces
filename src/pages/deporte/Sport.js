@@ -4,10 +4,9 @@ import styles from './Sport.module.css'
 import Article from '../../components/article'
 import Postnav from "../../components/postnav";
 import { Parallax } from "react-parallax";
-import soccer from "../../images/soccer7.jpg"
-import tennis from "../../images/tennis2.jpg"
-import basket from "../../images/basket.jpg"
-import volley from "../../images/volley.jpg"
+import Categories from "../../components/categories";
+
+import { useSelector } from "react-redux/";
 
 
 
@@ -20,17 +19,18 @@ const inStyles = {
 }
 
 function Sport(){
+    const img = useSelector((state)=>state.deporte)
     return(
         <div className={styles.main}>
-            <Parallax bgImage={soccer} strength={200}>
+            <Parallax bgImage={img.fuente} strength={200}>
                 <div style={{height:"60vh"}}>
                     <Postnav/>
                     <div style={inStyles}>
-                        SOCCER
+                        <h1 style={{fontSize:"50px", fontWeight:"bold"}}>{img.texto}</h1>
                     </div>
                 </div>
             </Parallax>
-            <h1>DEPORTE: XXXXX</h1>
+            <Categories/>
             <div className={styles.items}>
                 <Article/>
                 <Article/>

@@ -13,7 +13,7 @@
 .icon{
     flex-grow: 1;
     animation: rote 1s ease;
-    animation:shake-right 0.8s linear both
+    animation:shake-right 5s linear both infinite
 }
 
 

@@ -4,6 +4,8 @@ import botonLogIn from "./botonLogIn";
 import botonSignUp from "./botonSignUp";
 import botonCarrito from "./botonCarrito";
 import contadorSlice from "./contadorSlice";
+import cambiarDeporte from "./sportTittle";
+import botonArticulo from "./botonArticulo";
 
 export default configureStore({
     reducer: {
@@ -11,6 +13,8 @@ export default configureStore({
         log:  botonLogIn,
         sign: botonSignUp,
         car: botonCarrito,
-        contador: contadorSlice
+        contador: contadorSlice,
+        deporte: cambiarDeporte,
+        art: botonArticulo,
     }
 });
