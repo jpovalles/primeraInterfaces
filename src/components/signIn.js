@@ -7,6 +7,9 @@ import { activadorCarrito } from "../store/botonCarrito";
 import { activadorArticulo } from '../store/botonArticulo';
 import { useDispatch, useSelector } from "react-redux";
 
+import { auth, db } from "../firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+
 function SignIn({ onCloseSignIn }) {
   const { activador } = useSelector((state) => state.profile);
   const { activadorLog} = useSelector((state) => state.log)
@@ -30,6 +33,9 @@ function SignIn({ onCloseSignIn }) {
     setFormData((prevState) => ({ ...prevState, [name]: value }));
   };
 
+  const [correo,setCorreo] = useState("");
+  const [clave,setClave] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
@@ -37,6 +43,15 @@ function SignIn({ onCloseSignIn }) {
     // Mostrar mensaje de éxito
     setSuccessMessage("Te registraste con éxito");
 
+    const handleRegister = async () => {
+      let userCredential; 
+      if (clave.length < 6) {
+        console.error('La contraseña debe tener al menos 6 caracteres');
+      }
+      else{
+          userCredential = await createUserWithEmailAndPassword(auth,formData.email,formData.password);
+      }
+    }
     // Desaparecer el mensaje después de 2 segundos y ejecutar
     setTimeout(() => {
       setSuccessMessage("");
@@ -75,6 +90,7 @@ function SignIn({ onCloseSignIn }) {
             type="email"
             name="email"
             placeholder="Email"
+            id="correo"
             value={formData.email}
             onChange={handleChange}
             required
@@ -82,6 +98,7 @@ function SignIn({ onCloseSignIn }) {
           <input
             type="password"
             name="password"
+            id="clave"
             placeholder="Contraseña"
             value={formData.password}
             onChange={handleChange}
