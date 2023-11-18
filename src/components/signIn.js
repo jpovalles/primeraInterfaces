@@ -33,35 +33,38 @@ function SignIn({ onCloseSignIn }) {
     setFormData((prevState) => ({ ...prevState, [name]: value }));
   };
 
-  const [correo,setCorreo] = useState("");
-  const [clave,setClave] = useState("");
+  const handleRegister = async () => {
+    let userCredential; 
+    if (formData.password.length >= 6) {
+      userCredential = await createUserWithEmailAndPassword(auth,formData.email,formData.password);
+      setSuccessMessage("Te registraste con éxito");
+    }
+    else{
+      setSuccessMessage("La contraseña debe tener al menos 6 caracteres!");
+    }
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
 
-    // Mostrar mensaje de éxito
-    setSuccessMessage("Te registraste con éxito");
 
-    const handleRegister = async () => {
-      let userCredential; 
-      if (clave.length < 6) {
-        console.error('La contraseña debe tener al menos 6 caracteres');
-      }
-      else{
-          userCredential = await createUserWithEmailAndPassword(auth,formData.email,formData.password);
-      }
-    }
+    handleRegister();
+    // Mostrar mensaje de éxito
+    
+    
     // Desaparecer el mensaje después de 2 segundos y ejecutar
-    setTimeout(() => {
-      setSuccessMessage("");
-      dispatch(activar());
-      dispatch(desactivarLog());
-      dispatch(desactivarSign());
-      dispatch(activadorCarrito());
-      dispatch(activadorArticulo());
-      onCloseSignIn();
-    }, 1000);
+    
+      setTimeout(() => {
+        setSuccessMessage("");
+        dispatch(activar());
+        dispatch(desactivarLog());
+        dispatch(desactivarSign());
+        dispatch(activadorCarrito());
+        dispatch(activadorArticulo());
+        onCloseSignIn();
+      }, 1000);
+    
   };
 
   return (
@@ -104,7 +107,7 @@ function SignIn({ onCloseSignIn }) {
             onChange={handleChange}
             required
           />
-          <button type="submit">Registrarte</button>
+          <button type="submit" onClick={handleSubmit}>Registrate</button>
         </form>
         {successMessage && <div className="success-message">{successMessage}</div>}
       </div>
